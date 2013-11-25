@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   }
 
   s.source = {
-    :git => 'https://github.com/timominous/TDImageColors',
+    :git => 'https://github.com/timominous/TDImageColors.git',
     :tag => "#{s.version}"
   }
   s.platform = :ios, '6.0'
