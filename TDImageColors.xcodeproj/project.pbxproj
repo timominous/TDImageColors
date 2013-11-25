@@ -19,6 +19,12 @@
 		904BA562183F0A6400F72300 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 904BA54A183F0A6400F72300 /* UIKit.framework */; };
 		904BA56A183F0A6400F72300 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 904BA568183F0A6400F72300 /* InfoPlist.strings */; };
 		904BA56C183F0A6400F72300 /* TDImageColorsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 904BA56B183F0A6400F72300 /* TDImageColorsTests.m */; };
+		904BA57B183F0AE900F72300 /* UIColor+TDAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 904BA57A183F0AE900F72300 /* UIColor+TDAdditions.m */; };
+		904BA57E183F109F00F72300 /* TDImageColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 904BA57D183F109F00F72300 /* TDImageColors.m */; };
+		904BA587183F156D00F72300 /* UIImage+TDAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 904BA586183F156D00F72300 /* UIImage+TDAdditions.m */; };
+		904BA589183F1F7300F72300 /* test_image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 904BA588183F1F7300F72300 /* test_image.jpg */; };
+		904BA58D183F1F8B00F72300 /* TDDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 904BA58B183F1F8B00F72300 /* TDDemoViewController.m */; };
+		904BA58E183F1F8B00F72300 /* TDDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 904BA58C183F1F8B00F72300 /* TDDemoViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +54,16 @@
 		904BA567183F0A6400F72300 /* TDImageColorsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TDImageColorsTests-Info.plist"; sourceTree = "<group>"; };
 		904BA569183F0A6400F72300 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		904BA56B183F0A6400F72300 /* TDImageColorsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TDImageColorsTests.m; sourceTree = "<group>"; };
+		904BA579183F0AE900F72300 /* UIColor+TDAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+TDAdditions.h"; sourceTree = "<group>"; };
+		904BA57A183F0AE900F72300 /* UIColor+TDAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+TDAdditions.m"; sourceTree = "<group>"; };
+		904BA57C183F109F00F72300 /* TDImageColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDImageColors.h; sourceTree = "<group>"; };
+		904BA57D183F109F00F72300 /* TDImageColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDImageColors.m; sourceTree = "<group>"; };
+		904BA585183F156D00F72300 /* UIImage+TDAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+TDAdditions.h"; sourceTree = "<group>"; };
+		904BA586183F156D00F72300 /* UIImage+TDAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+TDAdditions.m"; sourceTree = "<group>"; };
+		904BA588183F1F7300F72300 /* test_image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test_image.jpg; sourceTree = "<group>"; };
+		904BA58A183F1F8B00F72300 /* TDDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TDDemoViewController.h; path = TDImageColors/TDDemoViewController.h; sourceTree = SOURCE_ROOT; };
+		904BA58B183F1F8B00F72300 /* TDDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TDDemoViewController.m; path = TDImageColors/TDDemoViewController.m; sourceTree = SOURCE_ROOT; };
+		904BA58C183F1F8B00F72300 /* TDDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TDDemoViewController.xib; path = TDImageColors/TDDemoViewController.xib; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,8 +123,13 @@
 		904BA54C183F0A6400F72300 /* TDImageColors */ = {
 			isa = PBXGroup;
 			children = (
+				904BA578183F0ADC00F72300 /* TDImageColors */,
 				904BA555183F0A6400F72300 /* TDAppDelegate.h */,
 				904BA556183F0A6400F72300 /* TDAppDelegate.m */,
+				904BA588183F1F7300F72300 /* test_image.jpg */,
+				904BA58A183F1F8B00F72300 /* TDDemoViewController.h */,
+				904BA58B183F1F8B00F72300 /* TDDemoViewController.m */,
+				904BA58C183F1F8B00F72300 /* TDDemoViewController.xib */,
 				904BA558183F0A6400F72300 /* Images.xcassets */,
 				904BA54D183F0A6400F72300 /* Supporting Files */,
 			);
@@ -142,6 +163,19 @@
 				904BA568183F0A6400F72300 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		904BA578183F0ADC00F72300 /* TDImageColors */ = {
+			isa = PBXGroup;
+			children = (
+				904BA579183F0AE900F72300 /* UIColor+TDAdditions.h */,
+				904BA57A183F0AE900F72300 /* UIColor+TDAdditions.m */,
+				904BA57C183F109F00F72300 /* TDImageColors.h */,
+				904BA57D183F109F00F72300 /* TDImageColors.m */,
+				904BA585183F156D00F72300 /* UIImage+TDAdditions.h */,
+				904BA586183F156D00F72300 /* UIImage+TDAdditions.m */,
+			);
+			path = TDImageColors;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,7 +255,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				904BA551183F0A6400F72300 /* InfoPlist.strings in Resources */,
+				904BA58E183F1F8B00F72300 /* TDDemoViewController.xib in Resources */,
 				904BA559183F0A6400F72300 /* Images.xcassets in Resources */,
+				904BA589183F1F7300F72300 /* test_image.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,7 +277,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				904BA557183F0A6400F72300 /* TDAppDelegate.m in Sources */,
+				904BA58D183F1F8B00F72300 /* TDDemoViewController.m in Sources */,
+				904BA587183F156D00F72300 /* UIImage+TDAdditions.m in Sources */,
 				904BA553183F0A6400F72300 /* main.m in Sources */,
+				904BA57B183F0AE900F72300 /* UIColor+TDAdditions.m in Sources */,
+				904BA57E183F109F00F72300 /* TDImageColors.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
