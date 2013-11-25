@@ -29,7 +29,6 @@
 
 - (id)initWithImage:(UIImage *)image count:(NSUInteger)count {
   if ((self = [super init])) {
-    NSLog(@"%s", __PRETTY_FUNCTION__);
     self.count = count;
     self.colors = @[];
     self.scaledImage = [UIImage imageWithImage:image scaledToSize:CGSizeMake(TDIMAGECOLORS_SCALED_SIZE,
@@ -40,12 +39,10 @@
 }
 
 - (void)detectColorsFromImage:(UIImage *)image {
-  NSLog(@"%s", __PRETTY_FUNCTION__);
   if (!image)
     return;
   NSCountedSet *imageColors;
   UIColor *backgroundColor = [self findBackroundColorOfImage:image imageColors:&imageColors];
-  NSLog(@"Finished finding background color");
   BOOL darkBackground = [backgroundColor isDarkColor];
   NSMutableArray *finalColors = [NSMutableArray arrayWithObject:backgroundColor];
   [finalColors addObjectsFromArray:[self findImageColors:imageColors backgroundColor:backgroundColor]];
@@ -57,11 +54,9 @@
   }
 
   self.colors = [NSArray arrayWithArray:finalColors];
-  NSLog(@"TDImageColors finished detecting colors");
 }
 
 - (NSArray *)findImageColors:(NSCountedSet *)imageColors backgroundColor:(UIColor *)backgroundColor {
-  NSLog(@"%s", __PRETTY_FUNCTION__);
   NSEnumerator *enumerator = [imageColors objectEnumerator];
 	UIColor *curColor = nil;
 	NSMutableArray *sortedColors = [NSMutableArray arrayWithCapacity:imageColors.count];
@@ -98,7 +93,6 @@
 }
 
 - (UIColor *)findBackroundColorOfImage:(UIImage *)image imageColors:(NSCountedSet **)colors {
-  NSLog(@"%s", __PRETTY_FUNCTION__);
   size_t width = CGImageGetWidth(image.CGImage);
   size_t height = CGImageGetHeight(image.CGImage);
   
@@ -107,7 +101,6 @@
   
   for (NSUInteger x = 0; x < width; x++) {
     for (NSUInteger y = 0; y < height; y++) {
-      NSLog(@"x: %d y: %d", x, y);
       UIColor *color = [UIImage colorFromImage:image atX:x andY:y];
       if (x == 0)
         [leftEdgeColors addObject:color];
