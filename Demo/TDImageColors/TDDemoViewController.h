@@ -10,6 +10,6 @@
 
 @interface TDDemoViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UILabel *loadingLabel;
 @property (strong, nonatomic) IBOutletCollection(UIView) NSArray *colorViews;
+
 @end

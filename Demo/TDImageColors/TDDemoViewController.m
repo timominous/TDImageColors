@@ -25,8 +25,6 @@
 
 - (void)viewDidLoad {
   [super viewDidLoad];
-  
-  NSLog(@"viewDidLoad");
 
   dispatch_group_t group = dispatch_group_create();
   
