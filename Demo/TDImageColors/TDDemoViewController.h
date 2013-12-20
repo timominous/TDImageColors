@@ -11,5 +11,6 @@
 @interface TDDemoViewController : UIViewController
 
 @property (strong, nonatomic) IBOutletCollection(UIView) NSArray *colorViews;
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
 @end

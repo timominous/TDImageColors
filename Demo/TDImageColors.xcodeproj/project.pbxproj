@@ -19,9 +19,14 @@
 		904BA562183F0A6400F72300 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 904BA54A183F0A6400F72300 /* UIKit.framework */; };
 		904BA56A183F0A6400F72300 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 904BA568183F0A6400F72300 /* InfoPlist.strings */; };
 		904BA56C183F0A6400F72300 /* TDImageColorsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 904BA56B183F0A6400F72300 /* TDImageColorsTests.m */; };
-		904BA589183F1F7300F72300 /* test_image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 904BA588183F1F7300F72300 /* test_image.jpg */; };
 		904BA58D183F1F8B00F72300 /* TDDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 904BA58B183F1F8B00F72300 /* TDDemoViewController.m */; };
 		904BA58E183F1F8B00F72300 /* TDDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 904BA58C183F1F8B00F72300 /* TDDemoViewController.xib */; };
+		9066FEF61863F034008FF19E /* test_image0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9066FEF01863F034008FF19E /* test_image0.jpg */; };
+		9066FEF71863F034008FF19E /* test_image1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9066FEF11863F034008FF19E /* test_image1.jpg */; };
+		9066FEF81863F034008FF19E /* test_image2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9066FEF21863F034008FF19E /* test_image2.jpg */; };
+		9066FEF91863F034008FF19E /* test_image3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9066FEF31863F034008FF19E /* test_image3.jpg */; };
+		9066FEFA1863F034008FF19E /* test_image4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9066FEF41863F034008FF19E /* test_image4.jpg */; };
+		9066FEFB1863F034008FF19E /* test_image5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9066FEF51863F034008FF19E /* test_image5.jpg */; };
 		90B48ABE184351A200F7C76F /* TDImageColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B48AB9184351A200F7C76F /* TDImageColors.m */; };
 		90B48ABF184351A200F7C76F /* UIColor+TDAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B48ABB184351A200F7C76F /* UIColor+TDAdditions.m */; };
 		90B48AC0184351A200F7C76F /* UIImage+TDAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B48ABD184351A200F7C76F /* UIImage+TDAdditions.m */; };
@@ -54,10 +59,15 @@
 		904BA567183F0A6400F72300 /* TDImageColorsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TDImageColorsTests-Info.plist"; sourceTree = "<group>"; };
 		904BA569183F0A6400F72300 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		904BA56B183F0A6400F72300 /* TDImageColorsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TDImageColorsTests.m; sourceTree = "<group>"; };
-		904BA588183F1F7300F72300 /* test_image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test_image.jpg; sourceTree = "<group>"; };
 		904BA58A183F1F8B00F72300 /* TDDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TDDemoViewController.h; path = TDImageColors/TDDemoViewController.h; sourceTree = SOURCE_ROOT; };
 		904BA58B183F1F8B00F72300 /* TDDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TDDemoViewController.m; path = TDImageColors/TDDemoViewController.m; sourceTree = SOURCE_ROOT; };
 		904BA58C183F1F8B00F72300 /* TDDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TDDemoViewController.xib; path = TDImageColors/TDDemoViewController.xib; sourceTree = SOURCE_ROOT; };
+		9066FEF01863F034008FF19E /* test_image0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test_image0.jpg; sourceTree = "<group>"; };
+		9066FEF11863F034008FF19E /* test_image1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test_image1.jpg; sourceTree = "<group>"; };
+		9066FEF21863F034008FF19E /* test_image2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test_image2.jpg; sourceTree = "<group>"; };
+		9066FEF31863F034008FF19E /* test_image3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test_image3.jpg; sourceTree = "<group>"; };
+		9066FEF41863F034008FF19E /* test_image4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test_image4.jpg; sourceTree = "<group>"; };
+		9066FEF51863F034008FF19E /* test_image5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test_image5.jpg; sourceTree = "<group>"; };
 		90B48AB8184351A200F7C76F /* TDImageColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDImageColors.h; sourceTree = "<group>"; };
 		90B48AB9184351A200F7C76F /* TDImageColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDImageColors.m; sourceTree = "<group>"; };
 		90B48ABA184351A200F7C76F /* UIColor+TDAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+TDAdditions.h"; sourceTree = "<group>"; };
@@ -126,10 +136,10 @@
 				90B48AB7184351A200F7C76F /* TDImageColors */,
 				904BA555183F0A6400F72300 /* TDAppDelegate.h */,
 				904BA556183F0A6400F72300 /* TDAppDelegate.m */,
-				904BA588183F1F7300F72300 /* test_image.jpg */,
 				904BA58A183F1F8B00F72300 /* TDDemoViewController.h */,
 				904BA58B183F1F8B00F72300 /* TDDemoViewController.m */,
 				904BA58C183F1F8B00F72300 /* TDDemoViewController.xib */,
+				9066FEEF1863F034008FF19E /* images */,
 				904BA558183F0A6400F72300 /* Images.xcassets */,
 				904BA54D183F0A6400F72300 /* Supporting Files */,
 			);
@@ -163,6 +173,19 @@
 				904BA568183F0A6400F72300 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9066FEEF1863F034008FF19E /* images */ = {
+			isa = PBXGroup;
+			children = (
+				9066FEF01863F034008FF19E /* test_image0.jpg */,
+				9066FEF11863F034008FF19E /* test_image1.jpg */,
+				9066FEF21863F034008FF19E /* test_image2.jpg */,
+				9066FEF31863F034008FF19E /* test_image3.jpg */,
+				9066FEF41863F034008FF19E /* test_image4.jpg */,
+				9066FEF51863F034008FF19E /* test_image5.jpg */,
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 		90B48AB7184351A200F7C76F /* TDImageColors */ = {
@@ -255,10 +278,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9066FEF61863F034008FF19E /* test_image0.jpg in Resources */,
+				9066FEF71863F034008FF19E /* test_image1.jpg in Resources */,
+				9066FEF81863F034008FF19E /* test_image2.jpg in Resources */,
 				904BA551183F0A6400F72300 /* InfoPlist.strings in Resources */,
+				9066FEFA1863F034008FF19E /* test_image4.jpg in Resources */,
+				9066FEF91863F034008FF19E /* test_image3.jpg in Resources */,
 				904BA58E183F1F8B00F72300 /* TDDemoViewController.xib in Resources */,
 				904BA559183F0A6400F72300 /* Images.xcassets in Resources */,
-				904BA589183F1F7300F72300 /* test_image.jpg in Resources */,
+				9066FEFB1863F034008FF19E /* test_image5.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

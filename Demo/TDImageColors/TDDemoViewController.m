@@ -29,10 +29,12 @@
   dispatch_group_t group = dispatch_group_create();
   
   dispatch_group_enter(group);
-  UIImage *image = [UIImage imageNamed:@"test_image.jpg"];
+  NSString *imageName = [NSString stringWithFormat:@"test_image%d.jpg", arc4random_uniform(6)];
+  UIImage *image = [UIImage imageNamed:imageName];
+  self.imageView.image = image;
   TDImageColors *imageColors = [[TDImageColors alloc] initWithImage:image count:5];
   dispatch_group_leave(group);
-  
+
   dispatch_group_notify(group, dispatch_get_main_queue(), ^{
     for (UIColor *color in imageColors.colors) {
       NSUInteger idx = [imageColors.colors indexOfObject:color];
