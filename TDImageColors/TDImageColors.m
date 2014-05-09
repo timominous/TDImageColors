@@ -49,22 +49,18 @@
   self.colors = [NSArray arrayWithArray:finalColors];
 }
 
-- (NSArray *)findColorsOfImage:(UIImage *)image imageColors:(NSCountedSet **)colors {
+- (NSArray *)findColorsOfImage:(UIImage *)image imageColors:(NSCountedSet * __autoreleasing *)colors {
   size_t width = CGImageGetWidth(image.CGImage);
   size_t height = CGImageGetHeight(image.CGImage);
   
   NSCountedSet *imageColors = [[NSCountedSet alloc] initWithCapacity:width * height];
   
-  NSDate *start = [NSDate date];
   for (NSUInteger x = 0; x < width; x++) {
     for (NSUInteger y = 0; y < height; y++) {
       UIColor *color = [UIImage colorFromImage:image atX:x andY:y];
       [imageColors addObject:color];
     }
   }
-  NSDate *finish = [NSDate date];
-  NSTimeInterval execution = [finish timeIntervalSinceDate:start];
-  
   *colors = imageColors;
   
   NSEnumerator *enumerator = [imageColors objectEnumerator];

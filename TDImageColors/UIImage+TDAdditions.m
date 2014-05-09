@@ -11,7 +11,7 @@
 @implementation UIImage (TDAdditions)
 
 
-+ (NSString *)colorHexFromImage:(UIImage *)image atX:(int)x andY:(int)y {
++ (NSString *)colorHexFromImage:(UIImage *)image atX:(NSInteger)x andY:(NSInteger)y {
   
   // Put image in buffer
   CGImageRef imageRef = image.CGImage;
@@ -30,7 +30,7 @@
   CGContextRelease(context);
   
   // rawDara now contains the image data in RGBA8888
-  int byteIndex = (bytesPerRow * y) + (x * bytesPerPixel);
+  NSInteger byteIndex = (bytesPerRow * y) + (x * bytesPerPixel);
   
   CGFloat red = (rawData[byteIndex] * 1.f);
   CGFloat green = (rawData[byteIndex + 1] * 1.f);
@@ -40,7 +40,7 @@
   return [NSString stringWithFormat:@"#%02X%02X%02X", (int)red, (int)green, (int)blue];
 }
 
-+ (UIColor *)colorFromImage:(UIImage *)image atX:(int)x andY:(int)y {
++ (UIColor *)colorFromImage:(UIImage *)image atX:(NSInteger)x andY:(NSInteger)y {
   
   // Put image in buffer
   CGImageRef imageRef = image.CGImage;
@@ -59,7 +59,7 @@
   CGContextRelease(context);
   
   // rawDara now contains the image data in RGBA8888
-  int byteIndex = (bytesPerRow * y) + (x * bytesPerPixel);
+  NSInteger byteIndex = (bytesPerRow * y) + (x * bytesPerPixel);
   
   CGFloat red = (rawData[byteIndex] * 1.f) / 255.f;
   CGFloat green = (rawData[byteIndex + 1] * 1.f) / 255.f;

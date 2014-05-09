@@ -11,8 +11,8 @@
 @interface UIImage (TDAdditions)
 
 // From http://stackoverflow.com/a/1262893
-+ (NSString *)colorHexFromImage:(UIImage *)image atX:(int)x andY:(int)y;
-+ (UIColor *)colorFromImage:(UIImage *)image atX:(int)x andY:(int)y;
++ (NSString *)colorHexFromImage:(UIImage *)image atX:(NSInteger)x andY:(NSInteger)y;
++ (UIColor *)colorFromImage:(UIImage *)image atX:(NSInteger)x andY:(NSInteger)y;
 + (UIImage *)imageWithImage:(UIImage *)image scaledToSize:(CGSize)newSize;
 
 @end
