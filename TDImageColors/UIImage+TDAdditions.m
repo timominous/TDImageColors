@@ -15,8 +15,8 @@
   
   // Put image in buffer
   CGImageRef imageRef = image.CGImage;
-  NSUInteger width = CGImageGetWidth(imageRef);
-  NSUInteger height = CGImageGetHeight(imageRef);
+  NSUInteger width = CGImageGetWidth(imageRef) / image.scale;
+  NSUInteger height = CGImageGetHeight(imageRef) / image.scale;
   CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
   unsigned char *rawData = (unsigned char*) calloc(height * width * 4, sizeof(unsigned char));
   NSUInteger bytesPerPixel = 4;
