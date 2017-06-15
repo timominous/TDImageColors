@@ -54,8 +54,14 @@
       fabs(b - bc) > threshold || fabs(a - ac) > threshold) {
     // Check for grays
     if (abs(r - g < 0.03f && fabs(r - b) < 0.03f)) {
-      if (fabs(rc - gc) < 0.03f && (fabs(rc - bc) < 0.03f))
-        return NO;
+        if (fabs(rc - gc) < 0.03f && (fabs(rc - bc) < 0.03f)){
+            //Havock94: Added control to luminance as well, otherwise colors in grey scale would all be NOT DISTINCT!
+            if(fabs([self luminance] - [color luminance]) < threshold){
+                return NO;
+            }else{
+                return YES;
+            }
+        }
     }
     return YES;
   }
