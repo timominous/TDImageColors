@@ -55,7 +55,7 @@
     // Check for grays
     if (abs(r - g < 0.03f && fabs(r - b) < 0.03f)) {
         if (fabs(rc - gc) < 0.03f && (fabs(rc - bc) < 0.03f)){
-            //Havock94: Added control to luminance as well, otherwise colors in grey scale would all be NOT DISTINCT!
+            //Havock94: Added comparison between the two luminances in case of grey scale colors. Testing the channel colors difference was not enough, since grey scale colors have the same amount of colors for each channel, and the only difference between them is indeed the luminance.
             if(fabs([self luminance] - [color luminance]) < threshold){
                 return NO;
             }else{
